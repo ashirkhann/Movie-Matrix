@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-link{
+    @apply  mx-2 p-4 hover:text-teal-500 cursor-pointer border-b-2 border-black hover:border-b-teal-500 transition-all ease-in duration-100;
+}
+
+.play-icon{
+    @apply text-xl font-bold mx-2 hover:text-teal-500 transition-colors ease-in duration-150 cursor-pointer;
+}
