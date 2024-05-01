@@ -99,14 +99,14 @@ const Header = () => {
                     </button>
                 </div>
                 {/* searchbar on small device  */}
-                <div ref={searchRef} className={`absolute ${isSearchOpen ? 'top-12 opacity-100' : '-top-32 opacity-0'} left-0 right-0 bg-black p-3 z-10 transition-all duration-200 ease-in-out sm:hidden block w-full `}>
+                <div ref={searchRef} className={`absolute ${isSearchOpen ? 'top-12 opacity-100' : '-top-32 opacity-0'} left-0 right-0 bg-black p-3 z-20 transition-all duration-200 ease-in-out sm:hidden block w-full`}>
                     <input
                         type="text"
                         placeholder="Search..."
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
                         onKeyUp={searchHandler}
-                        className="border border-black rounded-md py-1 text-md text-white sm:py-2 px-4 focus:outline-none focus:border-teal-500 bg-teal-960 w-3/4 "
+                        className="border border-black rounded-md py-1 text-md text-white sm:py-2 px-4 focus:outline-none focus:border-teal-500 bg-teal-960 w-[82%] "
                     />
                     <button className={`absolute ml-2 px-4 py-2 bg-teal-500 text-white rounded-md `}
                         onClick={(e) => {
